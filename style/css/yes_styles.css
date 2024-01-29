@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFEEF2;
+    margin: 0;
+}
+
+.container {
+    background-color: #FFC3D5;
+    padding: 5vw;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.header_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #4B4453;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.poem-container {
+    flex: 1;
+    min-width: 0; /* Ensure the poem container can shrink */
+}
+
+.poem-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #3A2A40;
+    text-align: center;
+}
+
+.poem-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+    color: #4B4453;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.gif-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #3A2A40;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .content-container {
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    .poem-title {
+        font-size: 4vw;
+    }
+
+    .poem-text {
+        font-size: 3vw;
+    }
+
+    .text {
+        font-size: 4vw;
+    }
+}
